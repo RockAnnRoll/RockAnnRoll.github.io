@@ -5,29 +5,53 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anns Portfolio</title>
   <link href="src/output.css" rel="stylesheet">
+  <script src="js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: 'Urbanist', sans-serif;" class="">
-<div>
+  <body class="font-[Urbanist] bg-[#EAEDED]">
+    <div>
 
-  <!-- HEADER -->
 
-  <header class="bg-white shadow-md p-4 px-6 h-16 flex justify-between items-center mb-12 sticky z-50">
 
-    <!-- Logo -->
-    <div class="flex items-center space-x-4">
-      <a href="#" class="text-2xl font-bold text-[#344648]">
-        Anns Portfolio
-      </a>
-    </div>
+
     
-    <!-- Länkar högst upp till höger -->
-    <nav class="space-x-4">
-      <a href="ommig.html" class="text-black-500 hover:underline text-xl">Om mig</a>
-      <a href="kontakt.html" class="text-black-500 hover:underline text-xl">Kontakt</a>
-    </nav>
+      <!-- HEADER -->
+    
+      <header class="bg-black sticky top-0 shadow-md p-4 px-6 h-16 flex justify-between items-center mb-12 z-50">
+    
+
+  <!-- Logo -->
+<div class="flex items-center space-x-4 group">
+  <a href="index.html" class="transition-colors duration-200">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="size-8 group-hover:stroke-[#FFBB98]">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+    </svg>
+  </a>
+</div>
+
+    
+<!-- Länkar högst upp till höger -->
+<nav class="space-x-4 text-white tracking-wide text-xl pr-4 flex">
+  <!-- Om mig dropdown -->
+  <div class="relative" id="dropdown-container">
+    <a href="ommig.html" class="no-underline hover:text-[#FFBB98] transition-colors duration-200" id="dropdown-trigger">Om mig</a>
+    <div class="absolute hidden mt-2 space-y-2 bg-black text-white rounded-lg shadow-lg w-48 p-4" id="dropdown-menu">
+      <!-- Första länken -->
+      <a href="studier.html" class="block no-underline hover:text-[#FFBB98]">Studier</a>
+      <!-- Andra länken -->
+      <a href="jobb.html" class="block no-underline hover:text-[#FFBB98]">Jobberfarenheter</a>
+      <!-- Tredje länken -->
+      <a href="projekt.html" class="block no-underline hover:text-[#FFBB98]">Projekt</a>
+    </div>
+  </div>
+
+
+
+  <a href="kontakt.html" class="no-underline hover:text-[#FFBB98] transition-colors duration-200">Kontakt</a>
+</nav>
+    
   </header>
 
 
@@ -38,32 +62,41 @@
     <div class="mb-8 flex justify-center">
       <img src="assets/img/Ann.png" alt="Bild på Ann" class="w-50 h-50">
     </div>
-    
-    <p class="text-3xl mb-14 text-center">
-      <span class="block mb-1">Ann Heijkenskjöld -</span>
-      <span class="font-bold text-[#344648]">Webbutveckling</span> och 
-      <span class="font-bold text-[#344648]">Beteendevetenskap</span>
-    </p>
 
-  
+    <h1 class="text-3xl mb-4 text-center">Hej!</h1>
+    <p class="text-xl mb-15 text-center max-w-xl">
+      <span class="mb-1">Jag studerar
+      <span class="font-bold text-[#344648]">Webbutveckling och Webbdesign.</span>
+      Att skapa snygga och funktionella webbplatser tycker jag är
+      lika kul som att lyssna på <span class="font-bold text-[#344648]">rock n roll!</span></span>
+    </p>
       
     <!-- Länkarna under bilden -->
     <div class="flex items-center gap-10">
       <!-- Första länken -->
-      <a href="studier.html" class="flex justify-center items-center bg-[#7D8E95] shadow-mb rounded-full w-60 h-60 text-center hover:bg-teal-700">
+      <a href="studier.html" class="flex justify-center items-center bg-[#7D8E95] text-black shadow-mb rounded-full w-60 h-60 text-center hover:bg-[#3A3A3A] hover:text-white">
         <span class="font-medium text-2xl">Studier</span>
       </a>
       <!-- Andra länken -->
-      <a href="jobb.html" class="flex justify-center items-center bg-[#FFBB98]  rounded-full w-60 h-60 text-center hover:bg-teal-700">
+      <a href="jobb.html" class="flex justify-center items-center bg-[#FFBB98]  text-black rounded-full w-60 h-60 text-center hover:bg-[#3A3A3A] hover:text-white">
         <span class="font-medium text-2xl">Jobberfarenheter</span>
       </a>
       <!-- Tredje länken -->
-      <a href="projekt.html" class="flex justify-center items-center bg-[#FBE0C3] rounded-full w-60 h-60 text-center hover:bg-teal-700">
+      <a href="projekt.html" class="flex justify-center items-center bg-[#FBE0C3] text-black rounded-full w-60 h-60 text-center hover:bg-[#3A3A3A] hover:text-white">
         <span class="font-medium text-2xl">Projekt</span>
       </a>
     </div>
+
+
   </section>
   
+
+
+
+
+  <!-- Footer  -->
+
+<footer class="bg-black text-white flex justify-center p-7">E-mail: ann@heijkenskjold.se </footer>
   
 
   
