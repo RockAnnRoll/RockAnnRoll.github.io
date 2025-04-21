@@ -5,10 +5,8 @@
 }
 
 .subheader {
-    @apply text-3xl font-bold;
+    @apply lg:text-3xl text-2xl font-bold;
 }
-
-
 
 .text_invert {
 @apply text-white dark:text-white; 
@@ -18,5 +16,8 @@
    @apply underline decoration-transparent hover:decoration-3 hover:decoration-[#3FCAC7]; 
 }
 
+.mobile_menu {
+    @apply relative after:content-[''] after:block after:w-0 after:h-[2px] after:bg-[#3FCAC7] after:transition-all after:duration-300 hover:after:w-full;
+}
 
 @custom-variant dark (&:where(.dark, .dark *));
