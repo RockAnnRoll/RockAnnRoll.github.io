@@ -5,12 +5,10 @@
 }
 
 .subheader {
-    @apply text-3xl font-bold mb-4;
+    @apply text-3xl font-bold;
 }
 
-.subheader_line{
-    @apply border-b-4 border-[#3FCAC7] pb-0;
-}
+
 
 .text_invert {
 @apply text-white dark:text-white; 
@@ -19,5 +17,6 @@
 .hover_underline {
    @apply underline decoration-transparent hover:decoration-3 hover:decoration-[#3FCAC7]; 
 }
+
 
 @custom-variant dark (&:where(.dark, .dark *));
